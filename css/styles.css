@@ -32,3 +32,36 @@ body {
     font-weight: bold;
     color: white;
 }
+
+/* Search Box */
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 300px;
+}
+
+.search-box input[type="text"] {
+    border: none;
+    padding: 5px;
+    outline: none;
+    font-size: 14px;
+    width: 100%;
+}
+
+.search-box button {
+    background-color: #67b0e4;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #000000;
+}
