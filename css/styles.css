@@ -120,3 +120,30 @@ body {
 .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
 }
+
+/* Hero Section (Carousel) */
+.carousel-container {
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.carousel-caption h5 {
+    font-size: 2rem;
+    color: white;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.carousel {
+    background: none;
+}
