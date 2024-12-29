@@ -214,6 +214,34 @@ body {
     background: none;
 }
 
+/* Carousel Overlay */
+.carousel-item {
+    position: relative; /* ให้ carousel-item มีการตั้งค่าเป็น relative */
+}
+
+.carousel-caption-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.carousel-caption-text {
+    font-size: 24px;
+    color: #fff; /* ตัวหนังสือสีขาว */
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* กรอบเป็นสีดำใส */
+    border-radius: 5px; /* มุมกรอบมน */
+    max-width: 80%; /* กำหนดขนาดของข้อความไม่ให้กว้างเกินไป */
+    margin: 0 auto; /* จัดข้อความให้อยู่ตรงกลาง */
+    font-weight: normal; /* เปลี่ยนเป็นตัวหนังสือไม่หนา */
+}
+
 /* Section Styles */
 section {
     width: 100%;
