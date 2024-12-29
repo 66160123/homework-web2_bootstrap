@@ -16,3 +16,19 @@ body {
     min-height: 100vh;
     margin: 0;
 }
+
+/* Header and Navbar */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #67b0e4;
+    position: relative;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
