@@ -78,6 +78,10 @@
 - git commit -m "เสร็จสิ้น"
 - git add .
 - git commit -m "เพิ่มโค้ด javascript"
+- git add .
+- git commit -m "เพิ่มคำสั่ง git ใน Readme.md"
+- git add .
+- git commit -m "เพิ่ม screenshot.pdf "
 
 - git commit -m "git checkout development"
 - git commit -m "git merge feature/homepage"
