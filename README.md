@@ -85,8 +85,8 @@
 - git add .
 - git commit -m "finish"
 
-- git commit -m "git checkout development"
-- git commit -m "git merge feature/homepage"
-- git commit -m "git merge feature/about"
-- git commit -m "git merge feature/contact"
+- git checkout development
+- git merge feature/homepage
+- git merge feature/about
+- git merge feature/contact
 - git push origin development
