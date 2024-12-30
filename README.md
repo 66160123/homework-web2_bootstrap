@@ -82,6 +82,8 @@
 - git commit -m "เพิ่มคำสั่ง git ใน Readme.md"
 - git add .
 - git commit -m "เพิ่ม screenshot.pdf "
+- git add .
+- git commit -m "finish"
 
 - git commit -m "git checkout development"
 - git commit -m "git merge feature/homepage"
