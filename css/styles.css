@@ -1,0 +1,262 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Header and Navbar */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #67b0e4;
+    position: relative;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 300px;
+}
+
+.search-box input[type="text"] {
+    border: none;
+    padding: 5px;
+    outline: none;
+    font-size: 14px;
+    width: 100%;
+}
+
+.search-box button {
+    background-color: #67b0e4;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #000000;
+}
+
+/* Navbar */
+.menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu li {
+    margin-left: 20px;
+    position: relative;
+}
+
+.menu li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #000000;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #FFF;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+@media only screen and (min-width: 480px) {
+    .hamburger {
+        display: none;
+    }
+
+    .header {
+        flex-direction: row; /* ทำให้ header อยู่ในแนวนอน */
+        justify-content: space-between; /* เพิ่มระยะห่างระหว่าง logo, search box, และ hamburger */
+        align-items: center;
+    }
+
+    .search-box {
+        width: auto; /* เปลี่ยน search box ให้พอดีกับเนื้อหาภายใน */
+        max-width: 300px;
+    }
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 480px) {
+    .menu {
+        display: none;
+        font-size: 18px;  /* เพิ่มขนาดตัวอักษร */
+        font-weight: bold;  /* ทำให้ข้อความหนาขึ้น */
+    }
+
+    .header {
+        padding: 1rem;
+        height: auto;
+        flex-direction: column; /* ทำให้ header อยู่ในแนวตั้ง */
+        align-items: flex-start; /* จัดตำแหน่งให้เริ่มจากซ้าย */
+    }
+
+    .menu {
+        width: 100;
+    }
+
+    .menu li {
+        margin: 0.25rem 0;
+        padding: 1rem 0.5rem;
+        transition: 0.3s;
+    }
+
+    .menu li:hover {
+        background-color: #87CEFA;
+    }
+
+    .menu.active {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .search-box {
+        width: 100%; /* ทำให้ search box เต็มความกว้าง */
+        max-width: 90%; /* กำหนดความกว้างสูงสุด */
+        margin-top: 10px; /* เพิ่มระยะห่างจาก hamburger */
+    }
+
+    .search-box input[type="text"] {
+        width: 250%; /* ให้ input ใช้พื้นที่เต็ม */
+    }
+
+}
+
+/* Hero Section (Carousel) */
+.carousel-container {
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.carousel-caption h5 {
+    font-size: 2rem;
+    color: white;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.carousel {
+    background: none;
+}
+
+/* Carousel Overlay */
+.carousel-item {
+    position: relative; /* ให้ carousel-item มีการตั้งค่าเป็น relative */
+}
+
+.carousel-caption-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.carousel-caption-text {
+    font-size: 24px;
+    color: #fff; /* ตัวหนังสือสีขาว */
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* กรอบเป็นสีดำใส */
+    border-radius: 5px; /* มุมกรอบมน */
+    max-width: 80%; /* กำหนดขนาดของข้อความไม่ให้กว้างเกินไป */
+    margin: 0 auto; /* จัดข้อความให้อยู่ตรงกลาง */
+    font-weight: normal; /* เปลี่ยนเป็นตัวหนังสือไม่หนา */
+}
+
+/* Section Styles */
+section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #67b0e4;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}

@@ -1,3 +1,92 @@
 # homework-web2_bootstrap
 
 # คำสั่ง git
+- git config --global user.name "Nutchaya"
+- git config --global user.email "66160123@go.buu.ac.th"
+- git add README.md
+- git commit -m "คำสั่ง git"
+- git push
+- git checkout -b development
+- git add .
+- git commit -m "สร้างไฟล์ในการทำงาน"
+- git add.
+- git checkout -b feature/homepage
+- git add .
+- git commit -m "เพิ่มโค้ดหน้า index เริ่มต้น"
+- git add .
+- git commit -m "เพิ่มโครงสร้าง HTML เบื้องต้น"
+- git add .
+- git commit -m "เพิ่มส่วนของ Header และ Navigation Menu"
+- git add .
+- git commit -m "เพิ่ม Hero Section และ Carousel สำหรับแสดงภาพ"
+- git add .
+- git commit -m "เพิ่ม Main Section และรายละเอียดสถานที่ท่องเที่ยว"
+- git add .
+- git commit -m "เพิ่ม Footer สำหรับข้อมูลติดต่อและลิงก์"
+- git add .
+- git commit -m "เพิ่ม JavaScript สำหรับการใช้งาน Bootstrap และการเปิดเมนู"
+- git add .
+- git commit -m "เพิ่ม global styles สำหรับโครงสร้าง layout และ body"
+- git add .
+- git commit -m "ออกแบบ header และปรับแต่ง logo"
+- git add .
+- git commit -m "เพิ่ม search box พร้อมการตั้งค่า hover สำหรับปุ่ม"
+- git add .
+- git commit -m "เพิ่มการออกแบบ navbar menu และ hamburger menu สำหรับ responsive"
+- git add .
+- git commit -m "ออกแบบ hero section และ carousel"
+- git add .
+- git commit -m "เพิ่มการออกแบบ section และ footer"
+- git add .
+- git commit -m "เพิ่ม responsive design ให้ header, navbar และ search box"
+- git add .
+- git commit -m "เพิ่ม Carousel Overlay"
+- git add .
+- git commit -m "เพิ่มโค้ด javascript"
+- git add .
+- git checkout -b feature/contact
+- git add.
+- git commit -m "เพิ่มโครงสร้างพื้นฐาน HTML และลิงก์ stylesheet กับ Bootstrap"
+- git add .
+- git commit -m "เพิ่ม header, logo, search box และ navbar"
+- git add .
+- git commit -m "เพิ่ม section แบบฟอร์มติดต่อ พร้อมการตรวจสอบข้อมูล"
+- git add .
+- git commit -m "เพิ่ม footer สำหรับข้อมูลติดต่อและลิงก์โซเชียล"
+- git add .
+- git commit -m "เพิ่ม script สำหรับ toggle menu"
+- git add .
+- git commit -m "เพิ่มโค้ด javascript"
+- git add .
+- git commit -m "สร้างโครงสร้าง css styles"
+- git checkout -b feature/about
+- git add.
+- git commit -m "สร้างโครงสร้าง css styles and upload picture"
+- git add.
+- git commit -m "สร้างโค้ดพื้นฐาน HTML พร้อม meta, title และลิงก์สำหรับ CSS"
+- git add .
+- git commit -m "เพิ่ม Header, logo, and hamburger menu"
+- git add .
+- git commit -m "เพิ่มส่วน main content พร้อมการแสดงสถานที่ท่องเที่ยวในรูปแบบ card"
+- git add .
+- git commit -m "เพิ่มส่วน footer พร้อมข้อมูลการติดต่อ แหล่งข้อมูล และลิงก์โซเชียลมีเดีย"
+- git add .
+- git commit -m "เพิ่ม JavaScript สำหรับการเปิด/ปิด hamburger menu"
+- git add .
+- git commit -m "เพิ่มการตั้งค่า CSS สำหรับการออกแบบ card และข้อความ"
+- git add .
+- git commit -m "เสร็จสิ้น"
+- git add .
+- git commit -m "เพิ่มโค้ด javascript"
+- git add .
+- git commit -m "เพิ่มคำสั่ง git ใน Readme.md"
+- git add .
+- git commit -m "เพิ่ม screenshot.pdf "
+- git add .
+- git commit -m "finish"
+
+- git checkout development
+- git merge feature/homepage
+- git merge feature/about
+- git merge feature/contact
+- git push origin development
