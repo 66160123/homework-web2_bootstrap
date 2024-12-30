@@ -17,6 +17,7 @@ body {
     margin: 0;
 }
 
+
 /* Header and Navbar */
 .header {
     display: flex;
@@ -260,3 +261,5 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
+  
