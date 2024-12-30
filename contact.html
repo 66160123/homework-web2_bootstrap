@@ -25,6 +25,35 @@
             <div class="bar3"></div>
         </div>
     </header>
-    
+
+    <main class="contact-main">
+        <section class="contact-section">
+            <h2 class="text-center my-4">Contact us</h2>
+            <form action="/submit" method="POST" role="form" aria-label="แบบฟอร์มติดต่อ" class="contact-form p-4 shadow rounded">
+                <div class="mb-3">
+                    <label for="fullname" class="form-label">ชื่อ-นามสกุล *</label>
+                    <input type="text" id="fullname" name="fullname" class="form-control" required minlength="2" maxlength="100">
+                    <small class="form-text">กรุณากรอกชื่อและนามสกุลจริง</small>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">อีเมล *</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                    <small class="form-text">ตัวอย่าง: example@domain.com</small>
+                </div>
+                <div class="mb-3">
+                    <label for="tel" class="form-label">เบอร์โทรศัพท์</label>
+                    <input type="tel" id="tel" name="tel" class="form-control" pattern="[0-9]{10}">
+                    <small class="form-text">กรอกหมายเลข 10 หลัก เช่น 0812345678</small>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">ข้อความ *</label>
+                    <textarea id="message" name="message" class="form-control" required rows="5"></textarea>
+                    <small class="form-text">กรุณากรอกข้อความอย่างน้อย 10 ตัวอักษร</small>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">ส่งข้อความ</button>
+            </form>
+        </section>
+    </main>    
+
 </body>
 </html>
